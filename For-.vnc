@@ -1,0 +1,28 @@
+run first :-cd .vnc 
+run second :- nano xstartup
+
+///pest this code///
+
+
+#!/data/data/com.termux/files/usr/bin/sh
+## Fluxbox desktop.
+
+# Generate menu.
+fluxbox-generate_menu
+
+# Start fluxbox.
+fluxbox &
+
+#!/data/data/com.termux/files/usr/bin/sh
+
+# Start Openbox.
+openbox-session &
+
+# Make background gray.
+xsetroot -solid gray
+
+# Launch PyPanel.
+pypanel &
+
+#!/data/data/com.termux/files/usr/bin/sh
+xfce4-session &
