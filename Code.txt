@@ -1,4 +1,10 @@
-:- pkg install -y x11-repo tigervnc fluxbox openbox pypanel xorg-xsetroot xfce4
+:- pkg install x11-repo -y
+:- pkg install tigervnc -y
+:- pkg install fluxbox -y
+:- pkg install openbox -y
+:- pkg install pypanel -y
+:- pkg install xorg-xsetroot -y
+:- pkg install xfce4 -y
 :-vncserver -localhost
 :-export DISPLAY=":1"
 :-export DISPLAY=localhost:0
